@@ -22,6 +22,16 @@ header,
   background: transparent !important;
 }
 
+.super-dark {
+  background-color: #1a1a1a !important; }
+
+.arno-custom-container {
+	position: fixed;
+  left: 0;
+  top: 0;
+  width: 25%;
+  height: 100%;
+}
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
     background: #78909c !important;
@@ -39,4 +49,10 @@ h5 {
 .hr-light {
   border-top: 3px solid #fff;
   width: 80px;
+}
+
+#myDIV5 {
+	width: 2000px;
+	height: 100%;
+	overflow-y: hidden;
 }
