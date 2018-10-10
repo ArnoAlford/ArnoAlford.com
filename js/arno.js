@@ -24,3 +24,15 @@ function myFunction2() {
         z.style.display = "block";
     }
 }
+
+function myFunction3() {
+    var x = document.getElementById("myDIV2");
+    var y = document.getElementById("myDIV6");
+    if (x.style.display === "none") {
+        y.style.display = "none";
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+        y.style.display = "block";
+    }
+}
