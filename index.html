@@ -258,7 +258,7 @@
 </div>
 </div>
 <!-- Card deck -->
-<section id="myDIV3" style="display: none;">
+<div class="container animated fadeIn" id="myDIV3" style="display: none;">
 <div class="jumbotron super-dark white-text rounded-bottom border border-light" >
     <h1 class="h1-reponsive white-text text-uppercase text-center font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong>Oracle Transaction Database</strong></h1>
     <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
@@ -266,10 +266,10 @@
     <p class="lead white-text text-center">https://github.com/ArnoAlford/My-SQL-Database-Project </p>
 </div>
 <button onclick="myFunction2()" class="btn btn-outline-white wow fadeInDown" style="position: relative; margin: 0 auto;" data-wow-delay="0.4s">Back</button>
-</section>
+</div>
 </div>
 <!--Grid row-->
-<section id="myDIV5" style="display: none; margin: auto; width: 100%; position: relative; overflow-x: hidden; left: 50px;">
+<div class="container animated fadeIn" id="myDIV5" style="display: none; margin: auto; width: 100%; position: relative; overflow-x: hidden; left: 50px;">
 <div  class="row">
 
 <!--Grid column-->
@@ -433,12 +433,27 @@ view of the the selected sales order.<br /><br /><br /><br /> </p>
 </div>
 <!--Grid row-->
 </div>
-</section>
-<div class="container justify-content-center align-items-center" id="myDIV6" style="display: none; margin-top: 1%; max-width: 1300px">
+</div>
+<div class="container justify-content-center align-items-center animated fadeIn" id="myDIV7" style="display: none; margin-top: 1%; max-width: 1700px;">
+<div class="row">
+<div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100" src="FlarePics/prob1.png" alt="First slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+    </div>
+</div>
+<div class="animated fadeIn delay-1s">
+<button onclick="myFunction4()" class="btn super-dark white-text rounded-bottom border wow animated pulse slow infinite" data-wow-delay="0.4s" style="bottom: 500px; left: 700px;">This is a clunky and unintuitive interface.</button>
+</div>
+</div>
+</div>
+<div class="container justify-content-center align-items-center animated fadeIn slow" id="myDIV6" style="display: none; margin-top: 1%; max-width: 1300px">
 <div class="row">
 <!-- Card -->
 <!--Carousel Wrapper-->
-<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
   <!--Indicators-->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
@@ -453,54 +468,49 @@ view of the the selected sales order.<br /><br /><br /><br /> </p>
     <div class="carousel-item active">
       <div class="view">
         <img class="d-block w-100" src="FlarePics/1.png" alt="First slide">
-        <div class="mask rgba-black-light"></div>
+        <div class="mask rgba-black-slight"></div>
       </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">Light mask</h3>
-        <p>First text</p>
-      </div>
+ <!--      <div class="carousel-caption">
+        <h3 class="h3-responsive" style="height: 50px;">Chat client, SSH terminal and live graph </h3>
+      </div> -->
     </div>
     <div class="carousel-item">
       <!--Mask color-->
       <div class="view">
         <img class="d-block w-100" src="FlarePics/2.PNG" alt="Second slide">
-        <div class="mask rgba-black-light"></div>
+        <div class="mask rgba-black-slight"></div>
       </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">Light mask</h3>
-        <p>Secondary text</p>
-      </div>
+<!--       <div class="carousel-caption">
+        <h3 class="h3-responsive" style="height: 50px;">Two independent terminals</h3>
+      </div> -->
     </div>
     <div class="carousel-item">
       <!--Mask color-->
       <div class="view">
         <img class="d-block w-100" src="FlarePics/3.PNG" alt="Third slide">
-        <div class="mask rgba-black-strong"></div>
+        <div class="mask rgba-black-slight"></div>
       </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">Strong mask</h3>
-        <p>Third text</p>
-      </div>
+<!--       <div class="carousel-caption">
+        <h3 class="h3-responsive" style="height: 50px;">Alerting and ticketing systems</h3>
+      </div> -->
     </div>
     <div class="carousel-item">
       <div class="view">
         <img class="d-block w-100" src="FlarePics/9.png" alt="First slide">
-        <div class="mask rgba-black-light"></div>
+        <div class="mask rgba-black-slight"></div>
       </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">Light mask</h3>
-        <p>First text</p>
-      </div>
+<!--       <div class="carousel-caption">
+        <h3 class="h3-responsive" style="height: 50px;">Live service graphs</h3>
+      </div> -->
     </div>
     <div class="carousel-item">
       <div class="view">
         <img class="d-block w-100" src="FlarePics/4.PNG" alt="First slide">
-        <div class="mask rgba-black-strong"></div>
+        <div class="mask rgba-black-slight"></div>
       </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">Strong mask</h3>
-        <p>First text</p>
-      </div>
+<!--       <div class="carousel-caption">
+        <h3 class="h3-responsive" style="height: 50px;">Fully documented</h3>
+      </div> -->
     </div>
   </div>
   <!--/.Slides-->
@@ -525,7 +535,9 @@ view of the the selected sales order.<br /><br /><br /><br /> </p>
     </div>
 </div>
 <div class="container" style="text-align: center;">
-<button onclick="myFunction3()" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s" style="bottom: 50px;">Back</button>
+<button onclick="myFunction5()" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s" style="bottom: 50px;">Back</button>
+</div>
+</div>
 </div>
 <!-- Card -->
 

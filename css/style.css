@@ -51,3 +51,9 @@ h5 {
   width: 80px;
 }
 
+.fadeIn-Pulse {
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+	-webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
