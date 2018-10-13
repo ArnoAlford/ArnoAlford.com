@@ -2,6 +2,7 @@ function myFunction() {
     var x = document.getElementById("myDIV");
     var y = document.getElementById("myDIV2");
     if (x.style.display === "none") {
+    	x.className += ' animated fadeIn';
         y.style.display = "none";
         x.style.display = "block";
     } else {
@@ -58,5 +59,20 @@ function myFunction5() {
     } else {
         x.style.display = "none";
         y.style.display = "block";
+    }
+}
+
+function myFunction6() {
+    var x = document.getElementById("myDIV2");
+    var y = document.getElementById("myDIV8");
+    var z = document.getElementById("myDIV9");
+    if (x.style.display === "none") {
+        y.style.display = "none";
+        z.style.display = "none";
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+        y.style.display = "block";
+        z.style.display = "block";
     }
 }
