@@ -14,6 +14,7 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
+  <link rel="preload" as="image" href="background.png">
 </head>
 
 <body>
@@ -209,7 +210,7 @@
       <!--Title-->
       <h4 class="card-title">Shipping the Order</h4>
     <!-- Text -->
-    <p class="card-text white-text mb-4">The sales order number is entered along with ship date and ship quantity. The program stores these in sales order while also adjusting the warehouse inventory to account for the shipped goods.</p>
+    <p class="card-text white-text mb-4">The sales order number is entered along with ship date and ship quantity. From here the program stores these shipping variables and adjusts inventory levels for the now shipped goods.</p>
     <a href="https://raw.githubusercontent.com/ArnoAlford/My-SQL-Database-Project/master/Ship.png" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s" target="_blank">The Result</a>
     <!-- Link -->
 
@@ -235,8 +236,8 @@
       <!--Title-->
       <h4 class="card-title">Querying the Order</h4>
     <!-- Text -->
-    <p class="card-text white-text mb-4">Next we have a query program that shows an easy-to-read 
-view of the the selected sales order.<br /><br /><br /><br /> </p>
+    <p class="card-text white-text mb-4"> In case we need to review the order, we have a query program that shows an easy-to-read 
+view of the the selected sales order.<br /><br /><br /> </p>
 <a href="https://raw.githubusercontent.com/ArnoAlford/My-SQL-Database-Project/master/Query.png" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s" target="_blank">The Result</a>
     <!-- Link -->
 
@@ -276,7 +277,7 @@ view of the the selected sales order.<br /><br /><br /><br /> </p>
       <!--Title-->
       <h4 class="card-title">Generating Aging Reports</h4>
     <!-- Text -->
-    <p class="card-text white-text mb-4">We then generate an aging report to see which orders have perhaps been open for a bit too long by running Aging.sql.</p>
+    <p class="card-text white-text mb-4"> Some orders may get caught in the system and not actually ship. We run Aging.sql to generate an aging report to see which orders have perhaps been open for a bit too long.</p>
     <a href="https://raw.githubusercontent.com/ArnoAlford/My-SQL-Database-Project/master/Aging.png" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s" target="_blank">The Result</a>
     <!-- Link -->
 
@@ -302,7 +303,7 @@ view of the the selected sales order.<br /><br /><br /><br /> </p>
       <!--Title-->
       <h4 class="card-title">Generating Sales Reports</h4>
     <!-- Text -->
-    <p class="card-text white-text mb-4">Finally we generate a sales report to see how much of each product we sold each month by running SalesReport.sql </p>
+    <p class="card-text white-text mb-4">Lastly we generate a sales report to see how much of each product we sold each month by running SalesReport.sql </p>
     <a href="https://raw.githubusercontent.com/ArnoAlford/My-SQL-Database-Project/master/SalesReport.png" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s" target="_blank">The Result</a>
     <!-- Link -->
 
@@ -426,7 +427,7 @@ view of the the selected sales order.<br /><br /><br /><br /> </p>
 <div class="jumbotron super-dark white-text rounded-bottom border border-light">
     <h1 class="h1-reponsive white-text text-uppercase text-center font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong>Network Observability with pfSense</strong></h1>
     <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
-    <p class="lead white-text text-center">A project to use monitoring, automation and metrics to evaluate and improve my home network's on a pfSense router. </p>
+    <p class="lead white-text text-center">A project to use monitoring, automation and metrics to evaluate and improve my home network's performance on a pfSense router. </p>
 </div>
 <button onclick="myFunction6()" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Back</button>
 </div>
@@ -448,7 +449,7 @@ view of the the selected sales order.<br /><br /><br /><br /> </p>
    <img class="d-flex align-self-start mr-3 img-fluid z-depth-4" src="pfSensePics/Monitoring/Capture10.PNG" alt="Generic placeholder image" style="width: 40%">
   <div class="media-body">
     <h5 class="mt-5 font-weight-bold text-center">Who Am I Communicating With?</h5>
-    <p> Using ntopng, I am able to grab traffic statistics from my router. From this I can see some really impactful information such as what IP's I am connecting with, how much of my traffic is going towards each IP, and what ports I am communicating on the most.</p>
+    <p> Using the ntopng package, I am able to grab traffic statistics from my router. From this I can see impactful information such as what IP's I am connecting with, how much of my traffic is going towards each IP, and what ports I am communicating on the most.</p>
   </div>
 </div>
 <div class="media" style="height: 360px;">
@@ -475,13 +476,13 @@ view of the the selected sales order.<br /><br /><br /><br /> </p>
    <img class="d-flex align-self-start mr-3 img-fluid z-depth-4" src="pfSensePics/Performance/Capture8.PNG" alt="Generic placeholder image" style="width: 35%">
   <div class="media-body">
     <h5 class="mt-5 font-weight-bold text-center">Increasing Performance Through Caching</h5>
-    <p>Through the use of Squid as a transparent proxy I was able to analyze and cache frequently visited pages. What does this mean? It means that the assets for frequently visited websites are loaded faster because the squid proxy saves them on to a server to be used. This means reduced page load times and reduced bandwidth usage on every page I visit frequently.</p>
+    <p>Through the use of Squid as a transparent proxy I am able to analyze and cache frequently visited pages. What does this mean? It means that the assets for frequently visited websites are stored on my server and used in place of redownloading them on each page load. This means reduced page load times and reduced bandwidth usage on every page I visit frequently.</p>
   </div>
 </div>
 <div class="media" style="height: 290px;">
   <div class="media-body"><bk>
     <h5 class="mt-5 mb-1 font-weight-bold text-center">Caching Encrypted Traffic</h5>
-    If left default, the only traffic my proxy could read and cache would be HTTP; however most taffic today is over encrypted HTTPS. To get around this I had to make a CA (Certificate Authority) to issue certificates that allowed me to splice HTTPS packets. This means that all web traffic, even the encrypted, can now be cached.
+    If left default, the only traffic my proxy could read and cache would be HTTP; however most taffic today is over encrypted HTTPS. To get around this I had to make a CA (Certificate Authority) to issue certificates that allowed me to splice HTTPS packets. This means that all web traffic, even the encrypted, will now be cached.
   </div>
   <img class="d-flex align-self-center ml-3 img-fluid z-depth-4" src="pfSensePics/Performance/Capture3.PNG" alt="Generic placeholder image" style="width: 63%; bottom: 70px;">
 </div>
@@ -501,7 +502,7 @@ view of the the selected sales order.<br /><br /><br /><br /> </p>
         <div class="media">
   <div class="media-body">
     <h5 class="mt-5 font-weight-bold text-center">Automating Backups</h5>
-    <p>One of the features not natively supported in basic pfSense is automatic backups, so I wrote this script to automatically create a backup once a day. The script is run on a remote server, and it pulls the backup from the router using the login form and a token. In addition, I have the script delete any backups older than 10 days every time it runs. </p>
+    <p>One of the features not natively supported in basic pfSense is automatic backups, so I wrote this script to automatically create a backup once a day. The script is run on a remote server, and it pulls the backup from the router using the login form and a token. In addition, I have the script check and delete any backups older than 10 days. </p>
   </div>
   <img class="d-flex mr-3 img-fluid z-depth-4" src="pfSensePics/Automation/Capture2.PNG" alt="Generic placeholder image" style="width: 60%; bottom: 15px;">
 </div>
