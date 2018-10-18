@@ -76,3 +76,16 @@ function myFunction6() {
         z.style.display = "block";
     }
 }
+
+function myFunction10() {
+    var x = document.getElementById("myDIV");
+    var y = document.getElementById("myDIV10");
+    if (x.style.display === "none") {
+    	x.className += ' animated fadeIn';
+        y.style.display = "none";
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+        y.style.display = "block";
+    }
+}
