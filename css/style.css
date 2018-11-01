@@ -22,6 +22,9 @@ header,
   background: transparent !important;
 }
 
+.card {
+  background-color: #1a1a1a !important; }
+
 .super-dark {
   background-color: #1a1a1a !important; }
 
