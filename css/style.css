@@ -14,10 +14,6 @@ header,
   }
 }
 
-@media screen and (max-width:480px) {
-    .myDIV5 {display:none}
-}
-
 .top-nav-collapse {
   background-color: #78909c !important;
 }

@@ -16,11 +16,14 @@ function myFunction2() {
     var y = document.getElementById("myDIV3");
     var z = document.getElementById("myDIV5");
     if (x.style.display === "none") {
+    	z.classList.remove("d-none")
+    	z.classList.remove("d-sm-block")
         y.style.display = "none";
         z.style.display = "none";
         x.style.display = "block";
     } else {
         x.style.display = "none";
+        z.className += ' d-none d-sm-block';
         y.style.display = "block";
         z.style.display = "block";
     }
@@ -89,3 +92,4 @@ function myFunction10() {
         y.style.display = "block";
     }
 }
+
