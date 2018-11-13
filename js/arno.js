@@ -29,6 +29,17 @@ function myFunction2() {
     }
 }
 
+function myFunction11() {
+	var w = document.getElementById("myBUTTON3");
+    var x = document.getElementById("myBUTTON2");
+    var y = document.getElementById("myDIV3");
+    var z = document.getElementById("myDIV5");
+    	y.style.display = "none";
+    	z.classList.remove("d-none");
+    	z.classList.remove("d-sm-block");
+    	w.style.display = "block";
+    }
+
 function myFunction3() {
     var x = document.getElementById("myDIV2");
     var y = document.getElementById("myDIV7");
