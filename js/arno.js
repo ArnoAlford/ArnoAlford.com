@@ -41,6 +41,7 @@ function myFunction11() {
     }
 
 function myFunction3() {
+	var v = document.getElementById("flareBUTTON");
 	var w = document.getElementById("myDIV900");
     var x = document.getElementById("myDIV2");
     var y = document.getElementById("myDIV6");
@@ -48,28 +49,23 @@ function myFunction3() {
     if (x.style.display === "none") {
     	y.classList.remove("d-none")
     	y.classList.remove("d-sm-block")
+    	v.classList.remove("d-block")
+    	v.classList.remove("d-sm-block")
     	w.className += ' overflow-y';
+    	v.style.display = "none";
         y.style.display = "none";
         z.style.display = "none";
         x.style.display = "block";
     } else {
         x.style.display = "none";
         y.className += ' d-none d-sm-block';
+        v.className += ' d-block d-sm-block';
         w.classList.remove("overflow-y")
+        v.style.display = "block";
         y.style.display = "block";
         z.style.display = "block";
     }
 }
-
-function myFunction12() {
-	var x = document.getElementById("carousel-example-1z");
-    var y = document.getElementById("myDIV12");
-    var z = document.getElementById("myDIV6");
-    	y.style.display = "none";
-    	x.className += ' rotate';
-    	z.classList.remove("d-none");
-    	z.classList.remove("d-sm-block");
-    }
 
 
 function myFunction5() {
