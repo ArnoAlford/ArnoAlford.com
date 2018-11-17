@@ -20,7 +20,7 @@
 <body>
 
           <!-- Full Page Intro -->
-          <div class="view" style="background-image: url('background.png'); background-repeat: no-repeat; background-size: cover; background-position: center center; overflow-y: auto;">
+          <div class="view overflow-y" id="myDIV900" style="background-image: url('background.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
             <!-- Mask & flexbox options-->
             <div class="mask rgba-black-light d-flex justify-content-center align-items-center" style="overflow-y: auto;">
               <!-- Content -->
@@ -106,8 +106,7 @@
     <!-- Text -->
     <p class="card-text white-text mb-4">A tool built while interning at Blizzard, designed to consolidate numerous independent internal tools into one clean page with full functionality and room for expansion.</p>
     <!-- Link -->
-    <button onclick="()" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Under Renovation</button>
-<!--     <button onclick="myFunction3()" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Read more</button> -->
+    <button onclick="myFunction3()" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Read more</button>
 
     </div>
 
@@ -346,24 +345,21 @@ view of the the selected sales order.<br /><br /><br /> </p>
 <button onclick="myFunction10()" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Back</button>
 </div>
 </div>
-</div>
-
-</div>
-<div class="container justify-content-center align-items-center animated fadeIn" id="myDIV7" style="display: none; margin-top: 1%; max-width: 1700px;">
+<!-- <div class="container justify-content-center align-items-center animated fadeIn" id="myDIV7" style="display: none; margin-top: 1%; max-width: 1700px;">
 <div class="row">
 <div class="carousel-inner img-fluid z-depth-5" role="listbox">
     <div class="carousel-item active">
       <div class="view">
         <img class="d-block w-100" src="FlarePics/prob1.png" alt="First slide">
         <div class="mask rgba-black-light"></div>
+        <button onclick="myFunction4()" class="btn super-dark white-text rounded-bottom border wow animated pulse slow infinite" data-wow-delay="0.4s" style="bottom: 500px; left: 700px;">This is a clunky and unintuitive interface.</button>
       </div>
     </div>
-</div>
-<div class="animated fadeIn delay-1s">
-<button onclick="myFunction4()" class="btn super-dark white-text rounded-bottom border wow animated pulse slow infinite" data-wow-delay="0.4s" style="bottom: 500px; left: 700px;">This is a clunky and unintuitive interface.</button>
+    <div class="animated fadeIn delay-1s">
 </div>
 </div>
 </div>
+</div> -->
 <div class="container justify-content-center align-items-center animated fadeIn slow" id="myDIV6" style="display: none; margin-top: 1%; max-width: 1300px">
 <div class="row">
 <!-- Card -->
@@ -379,7 +375,7 @@ view of the the selected sales order.<br /><br /><br /> </p>
   </ol>
   <!--/.Indicators-->
 <!--Slides-->
-  <div class="carousel-inner" role="listbox">
+  <div class="carousel-inner" role="listbox" id="carasel-inner-1">
     <div class="carousel-item active">
       <div class="view">
         <img class="d-block w-100" src="FlarePics/1.png" alt="First slide">
@@ -438,16 +434,23 @@ view of the the selected sales order.<br /><br /><br /> </p>
   <!--/.Controls-->
 </div>
 <!--/.Carousel Wrapper-->
-<div class="container super-dark white-text rounded-bottom border border-light" style="height: auto; position: sticky; bottom: 50px; width: 80%; height: 240px;">
+</div>
+</div>
+<div class="container super-dark white-text rounded-bottom border border-light" id="myDIV12" style=" display: none; height: auto; position: sticky; bottom: 50px;">
     <h1 class="h1-reponsive white-text text-uppercase text-center font-weight-bold mb-0 pt-md-3 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong>Flare</strong></h1>
     <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
     <p class="lead white-text text-center">Built on Python, Flask, and MySQL for the back-end, and HTML, CSS, and JavaScript for the front-end, FLARE allows numerous internal tools to be accessed and reshaped from one central page with full functionality. </p>
     <p class="lead white-text text-center">https://github.com/ArnoAlford/FLARE</p>
-    	<button onclick="myFunction5()" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s" style=" bottom: 52px; right: 150px;">Back</button>
+    <div class="row justify-content-center">
+    	<button onclick="myFunction3()" class="btn btn-outline-white wow fadeInDown d-none d-sm-block" data-wow-delay="0.4s">Back</button>
+    	<button onclick="myFunction12()" class="btn btn-outline-white wow fadeInDown d-block d-sm-none" style="position: relative; margin: 0 auto;" data-wow-delay="0.4s">More</button>
+    </div>
 </div
 </div>
 </div>
+
 </div>
+
 <!-- Card -->
 <div class="container animated fadeIn justify-content-end" id="myDIV8" style="display: none; padding-top: 20px; margin-right: 20px; margin-left: auto; max-width: 500px;">
 <div class="row justify-content-center">
