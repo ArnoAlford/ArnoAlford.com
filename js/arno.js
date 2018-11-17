@@ -66,7 +66,7 @@ function myFunction12() {
     var y = document.getElementById("myDIV12");
     var z = document.getElementById("myDIV6");
     	y.style.display = "none";
-    	x.className += ' rotate adjustments';
+    	x.className += ' rotate';
     	z.classList.remove("d-none");
     	z.classList.remove("d-sm-block");
     }
