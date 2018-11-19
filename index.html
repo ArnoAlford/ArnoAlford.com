@@ -132,8 +132,7 @@
     <!-- Text -->
     <p class="card-text white-text mb-4">A project to use monitoring, automation and metrics to evaluate and improve my home network's performance on a pfSense router.</p>
     <!-- Link -->
-    <button onclick="()" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Under Renovation</button>
-    <!-- <button onclick="myFunction6()" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Read more</button> -->
+    <button onclick="myFunction6()" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Read more</button>
     </div>
 
   </div>
@@ -165,6 +164,21 @@
 <!--Grid row-->
 
 </div>
+<div class="container animated fadeIn" id="myDIV10" style="display: none; max-width: 860px;">
+<div class="jumbotron super-dark white-text rounded-bottom border border-light" >
+    <h1 class="h1-reponsive white-text text-uppercase text-center font-weight-bold mb-0 pt-md-2 pt-2 wow fadeInDown" data-wow-delay="0.3s"><strong>About Me</strong></h1>
+    <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+    <p class="lead white-text" style="text-align: justify; text-indent: 50px;">	I am a senior student in the final semester of my degree working towards a career as a Site Reliability/DevOps Engineer. I have been building and tinkering with computers since I was 13 years old, and it is this passion that has pushed me into the tech world. Since working in the Network Operations Center at Blizzard, this firsthand experience has focused my passion on automation, monitoring, cloud and deployments.</p>
+    <p class="lead white-text" style="text-align: justify;  text-indent: 50px;"> In my free time I love to experiment whether it be my homelab, my keyboard, or my OS; I really enjoy creating things from scratch. I have also been spending a lot of time learning through DevOps books such as The Phoenix Project and my current book: The DevOps Handbook. Thanks for visiting.  If you have any questions or would like to reach me, please do so.</p>
+    <h4 class="h4-reponsive white-text text-uppercase text-center font-weight-bold mb-0 pt-md-3 pt-3 wow fadeInDown" data-wow-delay="0.3s" style="padding-bottom: 1rem;"><strong>Contact</strong></h4>
+    <p class="lead white-text text-center">arno.alford@runbox.ch </p>
+    <p class="lead white-text text-center">(714) 325-8213 </p>
+</div>
+<div class="row text-center" style="display: block;">
+<button onclick="myFunction10()" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Back</button>
+</div>
+</div>
+
 <div class="container animated fadeIn" id="myDIV5" style="display: none; margin: auto; height: 100%; width: 100%; position: relative; overflow-x: hidden;">
 <div  class="row">
 
@@ -329,22 +343,181 @@ view of the the selected sales order.<br /><br /><br /> </p>
 <!--Grid row-->
 <button onclick="myFunction2()" class="btn btn-outline-white wow fadeInDown d-block d-sm-none" id="myBUTTON3" style="position: relative; margin: 0 auto; display: none;" data-wow-delay="0.4s">Back</button>
 </div>
+<div class="container animated fadeIn justify-content-end" id="myDIV8" style="display: none; padding-top: 20px; margin: auto;">
+<!-- <div class="row justify-content-center"> -->
+	<div  class=" justify-content-center align-items-center">
+<!--Grid column-->
+<div class="jumbotron super-dark white-text rounded-bottom border border-light">
+    <h2 class="h2-reponsive white-text text-uppercase text-center font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong>Network Observability with pfSense</strong></h2>
+    <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+    <p class="lead white-text text-center">A project to use monitoring, automation and metrics to evaluate and improve my home network's performance on a pfSense router. </p>
+</div>
+<div class="container animated fadeIn" id="myDIV9" style="display: none; margin-left: 0; width: 100%; position: relative; overflow-x: hidden; top: 10px; overflow-y: auto;">
+<!-- <div  class="row"> -->
+	<div class="row justify-content-center">
+	<div class="accordion" id="accordionExample" style="margin-bottom: 15px;">
+  <div class="card z-depth-0 bordered super-dark white-text">
+    <div class="card-header" id="headingOne" style="padding: 0;">
+      <h5 class="mb-0">
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="box-shadow: none; background-color: transparent;">
+          Metrics
+        </button>
+      </h5>
+    </div>
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body elegant-color" style="padding-bottom: 0;">
+        <div class="media d-none d-lg-flex" id="metricsONE">
+   <a href="pfSensePics/Monitoring/Capture10.PNG" target="_blank" class="mr-3" style="width: 40%">
+   <img class="d-flex align-self-start mr-3 img-fluid z-depth-4" src="pfSensePics/Monitoring/Capture10.PNG">
+   </a>
+  <div class="media-body">
+    <h5 class="mt-5 font-weight-bold text-center">Who Am I Communicating With?</h5>
+    <p> Using the ntopng package, I am able to grab traffic statistics from my router. From this I can see impactful information such as what IP's I am connecting with, how much of my traffic is going towards each IP, and what ports I am communicating on the most.</p>
+  </div>
+  </div>
+          <div class="d-block d-lg-none" id="metricsONE.2">
+   <a href="pfSensePics/Monitoring/Capture10.PNG" target="_blank" class="mr-3">
+   <img class="d-flex align-self-start mr-3 img-fluid z-depth-4" src="pfSensePics/Monitoring/Capture10.PNG">
+   </a>
+  <div class="media-body">
+    <h5 class="mt-5 font-weight-bold text-center">Who Am I Communicating With?</h5>
+    <p> Using the ntopng package, I am able to grab traffic statistics from my router. From this I can see impactful information such as what IP's I am connecting with, how much of my traffic is going towards each IP, and what ports I am communicating on the most.</p>
+   </div>
+  </div>
+<div class="media d-none d-lg-flex" id="metricsTWO">
+  <div class="media-body">
+    <h5 class="mt-5 mb-1 font-weight-bold text-center">What Applications are Doing the Communicating?</h5>
+    One of the most useful metrics I can grab from ntopng is application protocol traffic. Here I can see exactly what applications are talking on my network, how much bandwidth they've used, and how long they've been up. This opens up some interesting questions such as "Why am I talking with Facebook if I don't have an account with them? Where is that traffic originating from?"
+  </div>
+  <a href="pfSensePics/Monitoring/Capture12.PNG" target="_blank" class="ml-3" style="width: 58%; bottom: 70px; margin-bottom: 1rem">
+  <img class="d-flex ml-3 img-fluid z-depth-4" src="pfSensePics/Monitoring/Capture12.PNG">
+</a>
+</div>
+<div class="media d-block d-lg-none" id="metricsTWO.2">
+	<a href="pfSensePics/Monitoring/Capture12.PNG" target="_blank" class="ml-3">
+	  <img class="d-flex ml-3 img-fluid z-depth-4" src="pfSensePics/Monitoring/Capture12.PNG">
+	</a>
+  <div class="media-body">
+    <h5 class="mt-5 mb-1 font-weight-bold text-center">What Applications are Doing the Communicating?</h5>
+    One of the most useful metrics I can grab from ntopng is application protocol traffic. Here I can see exactly what applications are talking on my network, how much bandwidth they've used, and how long they've been up. This opens up some interesting questions such as "Why am I talking with Facebook if I don't have an account with them? Where is that traffic originating from?"
+  </div>
+
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="card z-depth-0 bordered super-dark white-text">
+    <div class="card-header" id="headingTwo" style="padding: 0;">
+      <h5 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="box-shadow: none; background-color: transparent;">
+          Proxy Performance
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body elegant-color">
+        <div class="media d-none d-lg-flex" id="proxyONE">
+   <a href="pfSensePics/Performance/Capture8.PNG" target="_blank" class="mr-3" style="width: 35%">
+   <img class="d-flex align-self-start mr-3 img-fluid z-depth-4" src="pfSensePics/Performance/Capture8.PNG">
+   </a>
+  <div class="media-body">
+    <h5 class="mt-5 font-weight-bold text-center">Increasing Performance Through Caching</h5>
+    <p>Through the use of Squid as a transparent proxy I am able to analyze and cache frequently visited pages. What does this mean? It means that the assets for frequently visited websites are stored on my server and used in place of redownloading them on each page load. This means reduced page load times and reduced bandwidth usage on every page I visit frequently.</p>
+  </div>
+</div>
+        <div class="media d-block d-lg-none" id="proxyONE.2">
+   <a href="pfSensePics/Performance/Capture8.PNG" target="_blank" class="mr-3">
+   <img class="d-flex align-self-start mr-3 img-fluid z-depth-4" src="pfSensePics/Performance/Capture8.PNG">
+  </a>
+  <div class="media-body">
+    <h5 class="mt-5 font-weight-bold text-center">Increasing Performance Through Caching</h5>
+    <p>Through the use of Squid as a transparent proxy I am able to analyze and cache frequently visited pages. What does this mean? It means that the assets for frequently visited websites are stored on my server and used in place of redownloading them on each page load. This means reduced page load times and reduced bandwidth usage on every page I visit frequently.</p>
+  </div>
+</div>
+<div class="media d-none d-lg-flex" id="proxyTWO" style="height: 290px;">
+  <div class="media-body"><bk>
+    <h5 class="mt-5 mb-1 font-weight-bold text-center">Caching Encrypted Traffic</h5>
+    If left default, the only traffic my proxy could read and cache would be HTTP; however most taffic today is over encrypted HTTPS. To get around this I had to make a CA (Certificate Authority) to issue certificates that allowed me to splice HTTPS packets. This means that all web traffic, even the encrypted, will now be cached.
+  </div>
+    <a href="pfSensePics/Performance/Capture3.PNG" target="_blank" class="ml-3" style="width: 63%; bottom: 70px;">
+  <img class="d-flex align-self-center ml-3 img-fluid z-depth-4" src="pfSensePics/Performance/Capture3.PNG">
+</a>
+</div>
+<div class="media d-block d-lg-none" id="proxyTWO.2">
+  <a href="pfSensePics/Performance/Capture3.PNG" target="_blank" class="ml-3">
+  <img class="d-flex align-self-center ml-3 img-fluid z-depth-4" src="pfSensePics/Performance/Capture3.PNG">
+</a>
+  <div class="media-body"><bk>
+    <h5 class="mt-5 mb-1 font-weight-bold text-center">Caching Encrypted Traffic</h5>
+    If left default, the only traffic my proxy could read and cache would be HTTP; however most taffic today is over encrypted HTTPS. To get around this I had to make a CA (Certificate Authority) to issue certificates that allowed me to splice HTTPS packets. This means that all web traffic, even the encrypted, will now be cached.
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="card z-depth-0 bordered super-dark white-text">
+    <div class="card-header" id="headingThree" style="padding: 0;">
+      <h5 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="box-shadow: none; background-color: transparent;">
+          Automation
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body elegant-color">
+        <div class="media d-none d-lg-flex" id="automationONE">
+  <div class="media-body">
+    <h5 class="mt-5 font-weight-bold text-center">Automating Backups</h5>
+    <p>One of the features not natively supported in basic pfSense is automatic backups, so I wrote this script to automatically create a backup once a day. The script is run on a remote server, and it pulls the backup from the router using the login form and a token. In addition, I have the script check and delete any backups older than 10 days. </p>
+  </div>
+  <a href="pfSensePics/Automation/Capture2.PNG" target="_blank" class="ml-3" style="width: 60%; bottom: 15px; margin-bottom: 1rem">
+  <img class="d-flex mr-3 img-fluid z-depth-4" src="pfSensePics/Automation/Capture2.PNG">
+</a>
+</div>
+        <div class="media d-block d-lg-none" id="automationONE.2">
+ <a href="pfSensePics/Automation/Capture2.PNG" target="_blank" class="mr-3">
+  <img class="d-flex mr-3 img-fluid z-depth-4" src="pfSensePics/Automation/Capture2.PNG">
+</a>
+  <div class="media-body">
+    <h5 class="mt-5 font-weight-bold text-center">Automating Backups</h5>
+    <p>One of the features not natively supported in basic pfSense is automatic backups, so I wrote this script to automatically create a backup once a day. The script is run on a remote server, and it pulls the backup from the router using the login form and a token. In addition, I have the script check and delete any backups older than 10 days. </p>
+  </div>
+
+</div>
+<div class="media d-none d-lg-flex" id="automationTWO" style="height: 290px;">
+  <a href="pfSensePics/Automation/Capture3.PNG" target="_blank" class="mr-3" style="width: 63%;">
+	<img class="d-flex align-self-center mr-3 img-fluid z-depth-4" src="pfSensePics/Automation/Capture3.PNG">
+</a>
+  <div class="media-body"><bk>
+    <h5 class="mt-5 mb-1 font-weight-bold text-center">Automating Updates</h5>
+    Another important feature for me was updating the router. I always forget to install updates when they come out, so I wrote a script to automatically check and install any updates that are avaliable.
+  </div>
+</div>
+<div class="media media d-block d-lg-none" id="automationTWO.2">
+  <a href="pfSensePics/Automation/Capture3.PNG" target="_blank" class="mr-3">
+	<img class="d-flex align-self-center mr-3 img-fluid z-depth-4" src="pfSensePics/Automation/Capture3.PNG">
+</a>
+  <div class="media-body"><bk>
+    <h5 class="mt-5 mb-1 font-weight-bold text-center">Automating Updates</h5>
+    Another important feature for me was updating the router. I always forget to install updates when they come out, so I wrote a script to automatically check and install any updates that are avaliable.
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- </div> -->
+  <button onclick="myFunction6()" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Back</button>
 </div>
 
-<div class="container animated fadeIn" id="myDIV10" style="display: none; max-width: 860px;">
-<div class="jumbotron super-dark white-text rounded-bottom border border-light" >
-    <h1 class="h1-reponsive white-text text-uppercase text-center font-weight-bold mb-0 pt-md-2 pt-2 wow fadeInDown" data-wow-delay="0.3s"><strong>About Me</strong></h1>
-    <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
-    <p class="lead white-text" style="text-align: justify; text-indent: 50px;">	I am a senior student in the final semester of my degree working towards a career as a Site Reliability/DevOps Engineer. I have been building and tinkering with computers since I was 13 years old, and it is this passion that has pushed me into the tech world. Since working in the Network Operations Center at Blizzard, this firsthand experience has focused my passion on automation, monitoring, cloud and deployments.</p>
-    <p class="lead white-text" style="text-align: justify;  text-indent: 50px;"> In my free time I love to experiment whether it be my homelab, my keyboard, or my OS; I really enjoy creating things from scratch. I have also been spending a lot of time learning through DevOps books such as The Phoenix Project and my current book: The DevOps Handbook. Thanks for visiting.  If you have any questions or would like to reach me, please do so.</p>
-    <h4 class="h4-reponsive white-text text-uppercase text-center font-weight-bold mb-0 pt-md-3 pt-3 wow fadeInDown" data-wow-delay="0.3s" style="padding-bottom: 1rem;"><strong>Contact</strong></h4>
-    <p class="lead white-text text-center">arno.alford@runbox.ch </p>
-    <p class="lead white-text text-center">(714) 325-8213 </p>
 </div>
-<div class="row text-center" style="display: block;">
-<button onclick="myFunction10()" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Back</button>
+<!-- </div> -->
+
 </div>
 </div>
+</div>
+
 <!-- <div class="container justify-content-center align-items-center animated fadeIn" id="myDIV7" style="display: none; margin-top: 1%; max-width: 1700px;">
 <div class="row">
 <div class="carousel-inner img-fluid z-depth-5" role="listbox">
@@ -447,23 +620,22 @@ view of the the selected sales order.<br /><br /><br /> </p>
 <div class="container animated fadeIn slow">
     <button onclick="myFunction3()" class="btn btn-outline-white wow fadeInDown animated fadeIn slow" id="flareBUTTON" style=" display: none; position: relative;" data-wow-delay="0.4s">Back</button>
 </div>
-</div>
+
 </div>
 
 </div>
 
 <!-- Card -->
-<div class="container animated fadeIn justify-content-end" id="myDIV8" style="display: none; padding-top: 20px; margin-right: 20px; margin-left: auto; max-width: 500px;">
+<!-- <div class="container animated fadeIn justify-content-end" id="myDIV8" style="display: none; padding-top: 20px; margin-right: 20px; margin-left: auto; max-width: 500px;">
 <div class="row justify-content-center">
 <div class="jumbotron super-dark white-text rounded-bottom border border-light">
     <h1 class="h1-reponsive white-text text-uppercase text-center font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong>Network Observability with pfSense</strong></h1>
     <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
     <p class="lead white-text text-center">A project to use monitoring, automation and metrics to evaluate and improve my home network's performance on a pfSense router. </p>
+</div> -->
 </div>
-<button onclick="myFunction6()" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Back</button>
 </div>
-</div>
-<div class="container animated fadeIn" id="myDIV9" style="display: none; margin-left: 0; width: 100%; position: fixed; overflow-x: hidden; left: 50px; top: 10px;">
+<!-- <div class="container animated fadeIn" id="myDIV9" style="display: none; margin-left: 0; width: 100%; position: fixed; overflow-x: hidden; left: 50px; top: 10px;">
 <div  class="row">
 	<div class="accordion" id="accordionExample">
   <div class="card z-depth-0 bordered super-dark white-text">
@@ -549,7 +721,7 @@ view of the the selected sales order.<br /><br /><br /> </p>
   </div>
 </div>
 </div>
-</div>
+</div> -->
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
