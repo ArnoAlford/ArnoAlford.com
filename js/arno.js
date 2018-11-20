@@ -50,7 +50,8 @@ function myFunction3() {
     	y.classList.remove("d-none")
     	y.classList.remove("d-sm-block")
     	v.classList.remove("d-block")
-    	v.classList.remove("d-sm-block")
+    	v.classList.remove("d-sm-none")
+    	w.classList.remove("flarepage")
     	w.className += ' overflow-y';
     	v.style.display = "none";
         y.style.display = "none";
@@ -59,7 +60,8 @@ function myFunction3() {
     } else {
         x.style.display = "none";
         y.className += ' d-none d-sm-block';
-        v.className += ' d-block d-sm-block';
+        v.className += ' d-block d-sm-none';
+        w.className += ' flarepage';
         w.classList.remove("overflow-y")
         v.style.display = "block";
         y.style.display = "block";
